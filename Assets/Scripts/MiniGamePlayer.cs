@@ -44,7 +44,7 @@ public class MiniGamePlayer : MonoBehaviour
                 //게임 재시작
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0))
                 {
-                    gameManager.RestantGame();
+                    GameManager.Instance?.RestantGame();
                 }
             }
             else
@@ -90,6 +90,6 @@ public class MiniGamePlayer : MonoBehaviour
         deathcooldown = 1f;
 
         animator.SetInteger("IsDie", 1);
-        gameManager.GameOver();
+        GameManager.Instance?.GameOver();
     }
 }
