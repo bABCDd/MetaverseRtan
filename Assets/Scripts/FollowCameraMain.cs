@@ -4,7 +4,7 @@ using UnityEngine;
 
  // The target to follow
 
-public class FollowCamera : MonoBehaviour
+public class FollowCameraMain : MonoBehaviour
 {
     public Transform target;
     float xCamera;
