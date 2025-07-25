@@ -25,7 +25,7 @@ public class BgLooper : MonoBehaviour
     {
         Debug.Log("Triggerd: " + collision.name);
 
-        if(collision.CompareTag("BackGround"))
+        if(collision.CompareTag("background"))
         {
             float widthOfBgObject = ((BoxCollider2D)collision).size.x;
             Vector3 pos = collision.transform.position;
