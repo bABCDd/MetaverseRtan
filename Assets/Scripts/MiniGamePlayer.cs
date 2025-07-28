@@ -44,7 +44,7 @@ public class MiniGamePlayer : MonoBehaviour
                 //게임 재시작
                 if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0))
                 {
-                    GameManager.Instance?.RestantGame();
+                    GameManager.Instance?.BacktoHome();
                 }
             }
             else

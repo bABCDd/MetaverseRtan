@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
         uiManager.SetRestart();
     }
 
-    public void RestantGame()
+    public void BacktoHome()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("MainScene");
     }
 
     public void AddScore(int score)
