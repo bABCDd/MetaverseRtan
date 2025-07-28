@@ -5,8 +5,12 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
+
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI restartText;
+
+    public GameManager gameManager { get { return gameManager; } }
+
 
     void Start()
     {

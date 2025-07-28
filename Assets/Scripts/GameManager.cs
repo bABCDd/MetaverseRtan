@@ -39,5 +39,8 @@ public class GameManager : MonoBehaviour
         currentScore += score;
         Debug.Log("Score: " + currentScore);
         uiManager.UpdateScore(currentScore);
+
+        PlayerPrefs.SetInt("BestScore", currentScore);
+        PlayerPrefs.Save();
     }
 }
